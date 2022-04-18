@@ -11,7 +11,7 @@ You can download and start  BergenClimate with this code
 
 ``` r
 #install.packages("usethis") # install usethis package if necessary
-usethis::use_course("biostats-r/quartoDemo")
+usethis::use_course("biostats-r/BergenClimate")
 ```
 
 This ask you whether you want to download and save the project to your computer's desktop. 
