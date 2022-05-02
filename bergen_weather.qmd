@@ -15,13 +15,20 @@ library(gt)        # for tables
 
 # default plot theme
 theme_set(theme_bw())
+
+# default number of digit
+options(digits = 2)
 ```
 
 # Introduction
 
+Climate change is expected to have large impacts on both marine [@perry2005] and terrestrial ecosystems in Norway.
+
 # Methods
 
 ## Data Analysis
+
+Climate data were downloaded from https://seklima.met.no/
 
 Data were analysed in R version `r paste(R.version$major, R.version$minor, sep = ".")` [@R], using tidyverse for data manipulation and plots [@tidyverse].
 
@@ -59,7 +66,8 @@ mod <- lm(annual_mean_temp ~ year, data = bergen_annual)
 
 ```
 
-@tbl-monthly-means shows the mean monthly temperatures for Bergen for the period `r min(year(bergen$date))`--`r max(year(bergen$date))`. Mean annual temperatures in Bergen have been increasing over the study period at a rate of `r round(coef(mod)[2] * 10, 2)`°C per decade.
+@tbl-monthly-means shows the mean monthly temperatures for Bergen for the period `r min(year(bergen$date))`--`r max(year(bergen$date))`.
+Mean annual temperatures in Bergen have been increasing over the study period at a rate of `r coef(mod)[2] * 10`°C per decade.
 
 ```{r}
 #| label: tbl-monthly-means
