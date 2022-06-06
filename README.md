@@ -5,7 +5,8 @@
 <!-- badges: end -->
 
 The goal of the BergenClimate repo is to demonstrate how to use quarto markdown with R to write reproducible documents.
-It is made to be used with the Enough Markdown to Write a Thesis biostats book.
+It is designed to be used with the [Enough Markdown to Write a Thesis biostats](https://biostats-r.github.io/biostats/quarto/index.html) book.
+It can also be used with the [R Markdown](https://biostats-r.github.io/biostats/rmarkdown/index.html) is you have problems installing or running quarto.
 
 You can download and start  BergenClimate with this code
 
@@ -24,6 +25,7 @@ Files in this repo:
 -   README.md - this file
 -   BergenClimate.Rproj - RStudio project file. You can open the project by clicking on this file.
 -   bergen_weather.qmd - the quarto markdown file you will be editing
+-   bergen_weather.Rmd - an R Markdown version of the markdown file.  Use this if you have problems installing or running quarto
 -   references.bib - bibtex bibliography file
 -   nordic-journal-of-botany.csl - citation style language file for Nordic Journal of Botany
 -   plos.csl - citation style language file for PLOS
